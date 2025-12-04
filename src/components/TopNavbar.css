@@ -1,0 +1,31 @@
+/* EXERCISE 7: Search Input Styles */
+.search-input-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.hashtag-search-input {
+  width: 100%;
+  max-width: 250px;
+  padding: 8px 12px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  font-size: 14px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.hashtag-search-input:focus {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.hashtag-search-input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+

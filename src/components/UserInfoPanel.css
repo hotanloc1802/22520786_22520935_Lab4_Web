@@ -1,0 +1,76 @@
+/* EXERCISE 5: User Information Panel Styles */
+.user-info-panel {
+  position: absolute;
+  top: 60px;
+  right: 10px;
+  width: 200px;
+  background-color: rgba(0, 0, 0, 0.85);
+  border-radius: 12px;
+  padding: 15px;
+  z-index: 200;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  animation: slideInRight 0.3s ease-out;
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.user-info-content {
+  color: #fff;
+}
+
+.info-title {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #fff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding-bottom: 10px;
+}
+
+.info-section {
+  margin-bottom: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.info-label {
+  font-size: 11px;
+  color: #aaa;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.info-value {
+  font-size: 13px;
+  color: #fff;
+  font-weight: 400;
+}
+
+.description-text {
+  word-wrap: break-word;
+  line-height: 1.4;
+  max-height: 100px;
+  overflow-y: auto;
+}
+
+.description-text::-webkit-scrollbar {
+  width: 4px;
+}
+
+.description-text::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 2px;
+}
+

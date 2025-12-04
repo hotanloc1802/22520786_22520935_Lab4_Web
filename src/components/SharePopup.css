@@ -1,0 +1,123 @@
+/* EXERCISE 6: Share Popup Styles */
+.share-popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  animation: fadeIn 0.2s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.share-popup-content {
+  background-color: #1a1a1a;
+  border-radius: 20px;
+  padding: 30px;
+  width: 300px;
+  max-width: 90%;
+  position: relative;
+  animation: slideUp 0.3s ease-out;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.share-popup-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background-color 0.2s;
+}
+
+.share-popup-close:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.share-popup-title {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.share-icons-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+}
+
+.share-icon-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 12px;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.share-icon-item:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: scale(1.1);
+}
+
+.share-icon {
+  font-size: 40px;
+  transition: transform 0.2s;
+}
+
+.facebook-icon {
+  color: #1877f2;
+}
+
+.instagram-icon {
+  color: #e4405f;
+}
+
+.threads-icon {
+  color: #000;
+  filter: invert(1);
+}
+
+.share-icon-label {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 500;
+}
+
